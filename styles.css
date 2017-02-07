@@ -1,0 +1,42 @@
+body {
+  background-color: red;
+}
+
+h3 {
+  color: blue;
+}
+
+section {
+  background-color: yellow;
+  color: blue;
+}
+
+.kittens {
+   background-color: green;
+}
+
+.kittens-two {
+  background-color: yellow;
+}
+
+#kittens-section {
+  color: orange;
+}
+
+section {
+  background-color: white;
+  color: brown;
+}
+
+.kittens > h3 {
+  color: red;
+}
+
+.red-text {
+  color: blue;
+}
+
+nav {
+  background-color: orange;
+  color: white;
+}

@@ -1,0 +1,102 @@
+<!--
+In html pages, text between these marks are considered comments and will not render to the page.
+-->
+
+<!--
+!DOCTYPE html is a declaration letting the browser know to expect html.  This was needed for older versions of html,  now with html5 its more of a formality.
+-->
+<!DOCTYPE html>
+<!-- html tags are used to surround your html code. -->
+<html>
+<!-- head tags contain meta-data for your page.  This information is not rendered to the page directly, but supplies information to the browser about your content.  eg.  linking your style sheet, or the page title. -->
+  <head>
+    <!-- title tags are used to surround your page title,  this title shows up on the tabs in your browser. -->
+    <title>
+      Day One
+    </title>
+    <!-- link tags are usually used for importing/linking to your css style sheet.  the rel attribute is used to tell the tag its expecting a style sheet, and the href attribute is showing the browser where to find that css page. -->
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <!-- the body tag is the main house for your page.   This is where all the markup that gets rendered to the page lives.   You should only ever have one body tag. -->
+  <body>
+
+    <!-- header tags should contain things you would normally find at the top of your page.  A Title/Headering, navigation, important things about your page. -->
+    <header>
+      <h1>My First Webpage</h1>
+    </header>
+
+    <!-- sections are semi-genaric containers for groups of information that are related.  Here we have a section of puppies. -->
+    <section id="puppies-section">
+      <!-- An article wraps information that all relates to one thing.  The usual idea is that an article could be a stand alone page with the information.  Here ach article is about one puppy in particular.-->
+      <article>
+        <!-- h1 - h6 tags are used as headings,  getting progresively smaller as the number goes up.   These h3 tags mean the title is semi important to the article. -->
+        <h3>Puppy One</h3>
+
+        <!-- div tags are generic dividers.  These are used when you want to group elements together in a generic container. -->
+        <div>
+          <!-- img tags are void tags, meaning they do not wrap any other content.   Instead they make use of a src attribute to link to an image, locally or on the web.  The image is then renderd as the img tag. -->
+          <img src="http://cdn3-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-15.jpg">
+          <!-- p tags are used to wrap paragraphs of text.  Each paragraph should have its own open and close p tag around it.-->
+          <p>
+            This is a paragraph of all about puppies, super spelling.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h3>Puppy Two</h3>
+        <div>
+          <img src="./images/hounddog.jpg">
+        </div>
+        <p>
+          This is a paragraph about our hound.
+        </p>
+      </article>
+    </section>
+
+    <section class="kittens kittens-two kittens3">
+      <article>
+        <h3 class="red-text">All about Kittens</h3>
+        <div>
+          <img src="./images/Kittens.jpg">
+          <p>
+            Something about kittens and their eating habbits
+          </p>
+        </div>
+      </article>
+      <!-- aside tags are for information that is related to the article, but not directly necessary to it.   Eg.  the kitten above is an article, it contains information about that kitten, an image and a title.   The aside might be filled with links to cat website, or some other general information about cats. -->
+      <aside>
+        information about cats in general.
+      </aside>
+    </section>
+
+  <!-- footer tags are found at the bottom of your page.  They generally include information such as navigation, copy right information, terms and conditions. -->
+    <footer>
+
+      <!-- nav tags surround your navigation/links -->
+      <nav>
+        <!-- ul is an unordered list,  these lists contain list items <li> tags. -->
+        <ul>
+          <li>
+            <!--a tags are anchor links, they are used to create links to other pages -->
+            <a href="http://www.google.com">
+              One
+            </a>
+            <a href="http://www.google.com">
+              One point Two
+            </a>
+          </li>
+          <li>
+            <a href="http://www.yahoo.com">
+              Two
+            </a>
+          </li>
+          <li>
+            Three
+          </li>
+        </ul>
+      </nav>
+      &copy; Foundations
+    </footer>
+  </body>
+</html>
